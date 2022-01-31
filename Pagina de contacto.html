@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<!--
+    Autor: Jorge Manzanas Genicio
+    e-mail: jorge.mangen@educa.jcyl.es
+    Fecha: 27/11/2021
+    Descripcion:Este documento HTML es una pagina de contacto del creador de la pagina web "Turismo en Castilla y Leon"
+-->
+<html lang="es">
+    <head>
+        <meta charset="UNICODE"> <!--Con 'charset' se define el formato del texto en el que se escribe-->
+            <title>Pagina de contacto</title>
+    </head>
+    <body>
+        <!DOCTYPE html>
+<!--
+    Autor: Jorge Manzanas Genicio
+    e-mail: jorge.mangen@educa.jcyl.es
+    Fecha: 20/12/2021
+    Descripcion:
+-->
+<html lang="es">
+    <head>
+        <meta charset="UNICODE"> <!--Con 'charset' se define el formato del texto en el que se escribe-->
+            <title>Turismo en Castilla y León</title>
+    </head>
+
+    <style>
+        table, th, td {
+          border: 2px solid black;
+          border-collapse: collapse;
+        }
+    </style>
+
+    <body>
+		 <table style="width:100%"> <!--Con el atributo " width:X% " la tabla se ajusta al X% del ancho de la pantalla donde se muestre-->
+            <tr>
+              <th style="width:20%">Provincias</th> <!--Con el atributo " width:X% " la fila se ajusta al X% del ancho de la tabla en la que se encuentre-->
+              <th style="width:80%">Informacion</th>
+            </tr>
+            <tr>
+                <!--Atributo 'rowspan' para fusionar filas de una misma columna-->
+                <td><a href="./index.html">Pagina Principal</a></td>
+                <td rowspan="11"><p>Rellene el siguiente formulario para poder resolver sus dudas:</p>
+                    <form action=""><!--"action=""" sirve para  que al pulsar enviar redirija a una pagina de accion php. El codigo php, no lo vamos a ver aqui, ignorar esta parte del codigo.-->
+                        <!--la etiqueta "label" es la cabecera del cuadro de texto que se introduce con la etiqueta "input type="text""-->
+                        <label for="nombre">Nombre:</label><br><!--Con "<br>" se da un salto de linea-->
+                        <input type="text" id="nombre" name="nombre" value=""><br>
+                        <label for="apellidos">1er Apellido:</label><br>
+                        <input type="text" id="apellidos1" name="apellidos" value=""><br>
+                        <label for="apellidos">2ndo Apellido:</label><br>
+                        <input type="text" id="apellidos2" name="apellidos" value=""><br>
+                        <label for="correo">E-mail:</label><br>
+                        <input type="text" id="correo" name="correo" value=""><br><br>
+                    </form>
+                    <form action="">
+                        <label for="comunidad">Seleccione la comunidad de la que quieres más informacion:</label><br>
+                            <select id="comunidad" name="comunidad"><!--Con "select" se crea una lista de elemento que despliaga un alista en la que elijes uno, cada elemento de la lista se añade usando "option"-->
+                                <option value="Avila">Avila</option>
+                                <option value="Burgos">Burgos</option>
+                                <option value="Leon">Leon</option>
+                                <option value="Palencia">Palencia</option>
+                                <option value="Salamanca">Salamanca</option>
+                                <option value="Segovia">Segovia</option>
+                                <option value="Soria">Soria</option>
+                                <option value="Valladolid">Valladolid</option>
+                                <option value="Zamora">Zamora</option>
+                            </select>
+                    </form>
+                    <p>Escriba de manera breve su consulta:</p>
+                    <form action="">
+                        <textarea name="message" rows="10" cols="30"></textarea>
+                        <br><br>
+                    </form>
+                    <button type="button" onclick="alert('Datos enviados, en breve nos pondremos en contacto')">Enviar formulario</button>
+                   
+            </tr>
+            <!--Enlaces a documentos que se encuentran en carpetas que estan en el mismo directorio que el archivo 'index'-->
+            <tr>
+                <td><a href="Avila/Avila.html">Avila</a></td>
+            </tr>
+            <tr>
+                <td><a href="Burgos/Burgos.html">Burgos</a></td>
+            </tr>
+            <tr>
+                <td><a href="Leon/Leon.html">León</a</td>
+            </tr>
+            <tr>
+                <td><a href="Palencia/Palencia.html">Palencia</a></td>
+            </tr>
+            <tr>
+                <td><a href="Salamanca/Salamanca.html">Salamanca</a></td>
+            </tr>
+            <tr>
+                <td><a href="Segovia/Segovia.html">Segovia</a></td>
+            </tr>
+            <tr>
+                <td><a href="Soria/Soria.html">Soria</a></td>
+            </tr>
+            <tr>
+                <td><a href="Valladolid/Valladolid.html">Valladolid</a></td>
+            </tr>
+            <tr>
+                <td><a href="Zamora/Zamora.html">Zamora</a></td>
+            </tr>
+            <tr>
+                <th>Pagina de contacto</a></th>
+            </tr>
+          </table> 
+    </body>
+</html>
